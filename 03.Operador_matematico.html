@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Número 1: <input type="number" id="n1" name="n1">
+    <br>Operador: <input type="string" id="op" name="op">
+    <br>Número 2: <input type="number" id="n2" name="n2">
+    <input type="button" value="verificar" onclick="verificar()">
+    
+    <script>  
+        function verificar(){
+            var op = document.querySelector('input#op')
+                op = String(op.value)
+            var n1 = document.querySelector('input#n1')
+                n1 = Number(n1.value)
+            var n2 = document.querySelector('input#n2')
+                n2 = Number(n2.value)
+            var resul = 0
+
+            switch(op){
+                case "+":
+                result = n1 + n2
+                console.log(result)
+                break;
+
+                case "-":
+                result = n1 - n2
+                console.log(result)
+                break;
+
+                case "*":
+                result = n1 * n2
+                console.log(result)
+                break;
+
+                case "/":
+                result = n1 / n2
+                console.log(result)
+                break;
+
+                default:
+                console.log("Não foi possível realizar a operação")
+
+            }
+    }
+    </script>
+</body>
+</html>

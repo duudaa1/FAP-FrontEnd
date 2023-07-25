@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade para dirigir</title>
+</head>
+<body>
+    <input type="number" id="idade" name="idade">
+    <input type="button" value="verificar" onclick="verificar()">
+    
+    <script> 
+        function verificar(){
+            var idade = document.querySelector('input#idade').value
+            if(idade < 16) {
+            document.write('Você ainda não pode dirigir')
+        }
+            else if(16 <= idade && idade < 18){
+            document.write('Você pode dirigir acompanhado de responsáveis')
+        }
+            else {
+            document.write('Você já pode dirigir!')
+            }
+
+    }
+</script>
+
+</body>
+</html>
