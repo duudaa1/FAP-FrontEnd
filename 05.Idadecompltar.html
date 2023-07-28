@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade à completar</title>
+</head>
+<body>
+    
+    <input type="button" value="Iniciar" onclick="idadenasc()">
+    
+    <script> 
+    function idadenasc() {        
+        var indicador = false
+        while(indicador == false){
+        try{
+            var nome = prompt('Digite seu nome completo: ')
+            var ano = Number(prompt('Digite seu ano de nascimento: '))
+            var idade = 0
+            var atual = 2022
+       
+            if(1922 <= ano && ano <= 2021) {
+                idade = atual - ano
+                indicador = true
+                alert(nome + " " + idade + " anos")
+            }
+            else{
+            throw new Error("Valor inválido. Digite novamente!")
+            }
+        } 
+        catch(error){
+        window.alert(error)}
+    }    
+ } 
+    </script>
+</body>
+</html>
