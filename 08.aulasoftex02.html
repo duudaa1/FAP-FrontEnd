@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de exercícios</title>
+</head>
+<body>
+    <h1>Calcular soma de dígitos pares</h1>
+    <p>Insira o número inteiro em que deseja calcular a soma dos digitos pares:</p>
+    <input type="button" value="Inserir" onclick="somapar()">
+    <br><br><div id="res"></div>
+
+    <script>
+        
+        function somapar(){
+            var num = prompt('Digite o número em que deseja calcular a soma dos dígitos pares:')
+            var numsep = num.split('')
+            var n = Number(num)            
+            var res = document.querySelector('div#res') 
+            var soma = 0 
+
+            if (Number.isInteger(n)){   
+                for (let i = 0; i < numsep.length; i++){
+                    if (Number(numsep[i]) % 2 == 0){
+                        soma += Number(numsep[i])
+                    }
+                }
+                res.innerHTML = `A soma dos dígitos pares é igual à: ${soma}`
+            }  
+            else{
+            res.innerHTML = "Insira um número inteiro!"
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>

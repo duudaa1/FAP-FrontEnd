@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Softex 01</title>
+</head>
+<body>
+    <h1>Calcular Fatorial</h1>
+    <p>Insira o número que deseja calcular o fatorial:</p>
+    <input type="number" id="num" name="num">
+    <input type="button" value="Calcular" onclick="fatorial()">
+    <br><br><div id="res"></div>
+
+    <script>
+        
+        function fatorial(){
+            var num = Number(document.querySelector('input#num').value)
+            var res = document.querySelector('div#res') 
+            var fat = 1
+            var aux = 1
+
+            if (Number.isInteger(num)){
+                for (let i = num; 1 <= i; i = i - 1){
+                    fat = fat*i
+                }
+                res.innerHTML = `Fatorial de ${num} = ${fat}`
+            }
+            else{
+                res.innerHTML = "Insira um número inteiro!"
+            }
+        }
+
+    </script>
+
+</body>
+</html>
