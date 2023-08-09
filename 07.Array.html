@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+
+
+    <script>
+        let nome = []
+        let idade = []
+        let cor = []
+   
+        for (let i=0; i<10; i++){
+        nome.push(prompt('Digite seu nome: '))
+        idade.push(prompt('Digite sua idade: '))
+        cor.push(prompt('Digite sua cor favorita: '))
+        alert("Próximo cadastro!")
+        }
+
+
+    document.write(`<p>A lista de nomes é: ${nome}</p>`)
+    document.write(`<p>A lista de idades é: ${idade}</p>`)
+    document.write(`<p>A lista de cores é: ${cor}</p>`)
+
+
+    cor.splice(3,1,'verde')
+    idade.splice(0,1,23)
+
+
+    document.write(`<p>A lista de nomes é: ${nome}</p>`)
+    document.write(`<p>A lista de idades é: ${idade}</p>`)
+    document.write(`<p>A lista de cores é: ${cor}</p>`)
+
+
+    </script>
+   
+</body>
+</html>
