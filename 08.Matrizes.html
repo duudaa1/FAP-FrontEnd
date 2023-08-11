@@ -7,27 +7,26 @@
 </head>
 <body>
     <input type="button" value="Animais" onclick="animais()">
-    
-    <script> 
-        
+   
+    <script>
+       
         function animais(){
-        var matriz =[
-            ["Sol","Gato", 2],
-            ["Belinha","Cachorra", 4],
-            ["Anita","Tartaruga", 1]
-        ]
+        var animal = [] //recebe nome, especie e idade
+        var matriz = []    
 
-        for(let i=0; i< matriz.length; i++){
-            for(let j=0; j < matriz[i].length; j++){
-                console.log(matriz[i][j])
-                
+
+        for (let i=0; i < 3; i++){ //aqui o 3 determina a qantidade de cadastro - poderia ser qualquer número
+            for(let j=0; j < 1; j++){
+                animal.push(prompt('Digite o nome do seu pet: '))
+                animal.push(prompt('Digite a espécie do seu pet: '))
+                animal.push(prompt('Digite a idade do seu pet: '))
+                alert("Próximo animal!")
             }
+            matriz[i] = animal
+            animal = []  
         }
-        
-    }
-        
-        </script>
+        console.log(matriz)
+        }        
+    </script>
 </body>
 </html>
-
-
