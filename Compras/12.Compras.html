@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="produtos">
+
+        <div class="inicial">
+            
+            <h1>Supermercado Dona Ana</h1>
+            <p>Aqui seu dinheiro rende e o armário enche!</p>
+
+            <div id="ListaProd" class="ListaProd">
+                <h3>Lista de Produtos:</h3>
+                <ol>
+                    <li>Feijão</li>
+                    <li>Arroz</li>
+                    <li>Macarrão</li>
+                    <li>Flocão de Milho</li>
+                </ol>
+
+                <input type="number" id="item" name="item" placeholder="Número do produto">
+                <input type="button" value="Comprar" onclick="Comprar()">
+            </div>
+
+            <div id="Imagens" class="Imagens">
+                <img src="arroz.png" id="arroz" class="imagProd" width="250px"/>
+                <img src="feijão.png" id="feijao" class="imagProd" width="250px"/>
+                <img src="macarrao.png" id="macarrao" class="imagProd" width="250px"/>
+                <img src="fuba.png" id="fuba" class="imagProd" width="150px"/>
+
+                <div id="preco" class="preco"></div>
+            </div>
+        </div>
+
+    </section>
+
+    
+    
+    <section class="pagamento">
+
+    </section>
+
+
+    <script src="main.js" defer></script>
+
+</body>
+</html>
