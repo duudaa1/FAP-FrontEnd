@@ -1,0 +1,16 @@
+{
+    "dependencies": {
+      "@babel/runtime": "^7.22.15",
+      "prompt-sync": "^4.2.0"
+    },
+    "name": "calculadora-de-media-mod-1-ex-2",
+    "version": "1.0.0",
+    "main": "calculadorademedia copy.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": ""
+  }
